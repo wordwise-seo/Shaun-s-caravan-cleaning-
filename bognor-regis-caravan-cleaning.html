@@ -11,7 +11,77 @@
 <meta property="og:url" content="https://www.greenwayvaleting.co.uk/bognor-regis-caravan-cleaning.html"><meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<style>
+
+:root{--paper:#FAFBF8;--white:#FFFFFF;--green:#2F5E3A;--green-deep:#234A2D;--moss:#5C9A4F;
+--bark:#5A4632;--tan:#C8B79B;--tan-soft:#EFE7D8;--ink:#23291F;--muted:#5C6354;
+--radius:14px;--shadow:0 1px 2px rgba(35,41,31,.06),0 12px 30px -18px rgba(35,41,31,.35);--maxw:1120px;}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Inter",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:600;line-height:1.12;letter-spacing:-.01em;color:var(--green-deep);margin:0 0 .5em}
+h1{font-size:clamp(2rem,5vw,3rem)}h2{font-size:clamp(1.5rem,3.4vw,2.2rem)}h3{font-size:1.15rem;color:var(--bark)}
+p{margin:0 0 1rem}a{color:var(--green)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+.narrow{max-width:760px}
+.eyebrow{font-weight:700;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--moss);margin:0 0 .6rem}
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-weight:600;font-size:1rem;padding:.8rem 1.35rem;border-radius:999px;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:.15s}
+.btn-primary{background:var(--green);color:#fff}.btn-primary:hover{background:var(--green-deep)}
+.btn-ghost{background:transparent;color:var(--green-deep);border-color:var(--tan)}.btn-ghost:hover{border-color:var(--green);background:var(--white)}
+.btn-wa{background:var(--bark);color:#fff}.btn-wa:hover{filter:brightness(1.08)}
+header{position:sticky;top:0;z-index:40;background:rgba(250,251,248,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--tan-soft)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:.55rem;font-family:"Fraunces";font-weight:700;font-size:1.12rem;color:var(--green-deep);text-decoration:none}
+.brand .mark{width:28px;height:28px;flex:none}
+.nav-links{display:none;gap:1.3rem}.nav-links a{color:var(--ink);text-decoration:none;font-weight:500;font-size:.93rem}.nav-links a:hover{color:var(--green)}
+.nav-cta{display:flex;align-items:center;gap:.7rem}.tel{font-weight:700;color:var(--green-deep);text-decoration:none;white-space:nowrap;font-size:.95rem}
+@media(min-width:980px){.nav-links{display:flex}}
+.crumbs{background:var(--tan-soft);font-size:.82rem}
+.crumbs .wrap{padding-top:9px;padding-bottom:9px}
+.crumbs a{color:var(--bark);text-decoration:none}.crumbs a:hover{text-decoration:underline}.crumbs span{color:var(--muted)}
+.hero{padding:46px 0 8px}
+.hero .lead{font-size:1.12rem;color:var(--muted);max-width:46ch}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.2rem}
+.trust-row{display:flex;flex-wrap:wrap;gap:.5rem .9rem;margin-top:1.5rem;list-style:none;padding:0}
+.trust-row li{display:flex;align-items:center;gap:.4rem;font-size:.84rem;font-weight:600;color:var(--bark)}
+.trust-row svg{width:16px;height:16px;flex:none;color:var(--moss)}
+section{padding:46px 0}
+.section-head{max-width:64ch;margin-bottom:28px}.section-head.center{margin-left:auto;margin-right:auto;text-align:center}
+article p,article li{color:var(--ink)}
+article h2{margin-top:1.6em}article h3{margin-top:1.3em}
+.prose{max-width:760px}.prose ul{padding-left:1.2rem}.prose li{margin:.35rem 0}
+.cards{display:grid;gap:16px;grid-template-columns:1fr}
+@media(min-width:680px){.cards{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--white);border:1px solid var(--tan-soft);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow);text-decoration:none;color:inherit;display:block}
+a.card:hover{border-color:var(--green);transform:translateY(-2px);transition:.15s}
+.card h3{margin:0 0 .25rem}.card p{margin:0;font-size:.94rem;color:var(--muted)}
+.card .go{color:var(--green);font-weight:600;font-size:.9rem;margin-top:.6rem;display:inline-block}
+.pricestrip{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}
+.pricestrip .pp{background:var(--white);border:1px solid var(--tan-soft);border-radius:10px;padding:.5rem .8rem;font-size:.9rem}
+.pricestrip .pp b{color:var(--green-deep)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:var(--white);border:1px solid var(--tan);color:var(--ink);border-radius:999px;padding:.32rem .8rem;font-size:.85rem;font-weight:500;text-decoration:none}
+.chip:hover{border-color:var(--green);color:var(--green)}
+.faq details{background:var(--white);border:1px solid var(--tan-soft);border-radius:12px;margin-bottom:10px;overflow:hidden}
+.faq summary{cursor:pointer;list-style:none;padding:15px 18px;font-weight:600;color:var(--green-deep);display:flex;justify-content:space-between;gap:1rem;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .pm{flex:none;width:18px;height:18px;color:var(--moss);transition:.2s}
+.faq details[open] summary .pm{transform:rotate(45deg)}
+.faq .ans{padding:0 18px 16px;color:var(--muted);font-size:.95rem}
+.related{background:var(--tan-soft)}
+.final{background:var(--green);color:#fff;border-radius:18px;padding:34px 26px;text-align:center}
+.final h2{color:#fff}.final p{color:#e7f1e3;max-width:46ch;margin:0 auto 1.1rem}
+footer{background:var(--ink);color:#cdd2c5;padding:44px 0 26px;margin-top:50px;font-size:.9rem}
+.fgrid{display:grid;gap:24px;grid-template-columns:1fr}
+@media(min-width:760px){.fgrid{grid-template-columns:1.5fr 1fr 1fr 1fr}}
+footer h4{font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;color:#fff;margin:0 0 .7rem}
+footer a{color:#cdd2c5;text-decoration:none}footer a:hover{color:#fff}
+footer ul{list-style:none;margin:0;padding:0}footer li{padding:.18rem 0}
+.fbrand{display:flex;align-items:center;gap:.5rem;font-family:"Fraunces";font-weight:700;color:#fff;font-size:1.05rem;margin-bottom:.5rem}
+.legal{border-top:1px solid rgba(255,255,255,.12);margin-top:26px;padding-top:16px;font-size:.78rem;color:#9aa091;display:flex;flex-wrap:wrap;gap:.4rem 1rem;justify-content:space-between}
+:focus-visible{outline:3px solid var(--moss);outline-offset:2px;border-radius:4px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.greenwayvaleting.co.uk/"}, {"@type": "ListItem", "position": 2, "name": "Areas", "item": "https://www.greenwayvaleting.co.uk/locations.html"}, {"@type": "ListItem", "position": 3, "name": "Bognor Regis", "item": "https://www.greenwayvaleting.co.uk/bognor-regis-caravan-cleaning.html"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "AutoWash", "name": "Greenway Valeting \u2014 Bognor Regis", "description": "Mobile caravan and motorhome cleaning and valeting in Bognor Regis, West Sussex.", "url": "https://www.greenwayvaleting.co.uk/bognor-regis-caravan-cleaning.html", "telephone": "+441306000000", "priceRange": "\u00a3\u00a3", "areaServed": {"@type": "City", "name": "Bognor Regis"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Caravan & Motorhome Cleaning in Bognor Regis", "description": "Mobile caravan and motorhome cleaning in Bognor Regis.", "serviceType": "Caravan & Motorhome Cleaning in Bognor Regis", "url": "https://www.greenwayvaleting.co.uk/bognor-regis-caravan-cleaning.html", "provider": {"@type": "AutoWash", "name": "Greenway Valeting", "telephone": "+441306000000", "areaServed": ["Surrey", "West Sussex", "East Sussex"]}, "areaServed": [{"@type": "AdministrativeArea", "name": "Surrey"}, {"@type": "AdministrativeArea", "name": "West Sussex"}, {"@type": "AdministrativeArea", "name": "East Sussex"}]}</script>
